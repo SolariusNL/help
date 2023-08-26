@@ -1,0 +1,26 @@
+import { Services } from "@/components/Services";
+import { Resources } from "@/components/Resources";
+import { HeroPattern } from "@/components/HeroPattern";
+
+export const description =
+  "Learn everything there is to know about the Framework API and integrate Framework into your product.";
+
+export const sections = [
+  { title: "Services", id: "services" },
+  { title: "Resources", id: "resources" },
+];
+
+<HeroPattern />
+
+# Solarius Support Portal
+
+Welcome to the Solarius support portal. Here, you can find documentation and help for our different services like Framework or Infra.
+
+<div className="not-prose mb-16 mt-6 flex gap-3">
+  <Button href="/quickstart" arrow="right" children="Quickstart" />
+  <Button href="#services" variant="outline" children="Explore our services" />
+</div>
+
+<Services />
+
+<Resources />

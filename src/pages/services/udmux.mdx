@@ -1,0 +1,50 @@
+export const description =
+  "Learn about our DDoS mitigation service, Udmux, and how it works.";
+
+# Udmux
+
+Udmux is an advanced DDoS mitigation service that protects your website from DDoS attacks - comparable to Cloudflare.
+
+<Note>
+  Udmux is currently only available to Solarius services while we work on
+  building a public version.
+</Note>
+
+## How it works
+
+Udmux works by routing all traffic through our servers, which then filter out malicious traffic and only allow legitimate traffic to reach your website.
+
+We identify 'legitimate' traffic by using a combination of machine learning and heuristics to determine whether a request is legitimate or not.
+
+## What it protects against
+
+- Layer 3/4 attacks
+- Layer 7 attacks
+- HTTP floods
+- UDP floods
+- SYN floods
+- DNS amplification attacks
+- NTP amplification attacks
+- SSDP amplification attacks
+- Memcached amplification attacks
+- Slowloris attacks
+- RUDY attacks
+- HTTP GET/POST floods
+- HTTP slow read attacks
+- HTTP slow POST attacks
+- and more...
+
+## How we protect against it
+
+Our global infrastructure has a network capacity of over 750Tbps, which allows us to absorb even the largest of DDoS attacks.
+
+Cloudflare, for comparison, has a network capacity of ~209Tbps. This means that we can absorb 3.5x the amount of traffic that Cloudflare can.
+
+## Cost of Udmux
+
+Udmux will have a flat rate of $5/mo per domain, with no bandwidth limits or other restrictions. This is a fraction of the cost of Cloudflare, which charges $20/mo for the same service.
+
+<Note>
+  We may charge additional fees for domains that receive a large amount of
+  traffic, but this will be on a case-by-case basis.
+</Note>
