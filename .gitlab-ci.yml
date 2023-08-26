@@ -1,0 +1,18 @@
+default:
+  image: node:16.16.0
+
+before_script:
+  - yarn global add vercel
+  - git config --global url."http://gitlab-ci-token:${CI_JOB_TOKEN}@invent.solarius.me/".insteadOf http://invent.solarius.me/
+
+deploy_production:
+  stage: deploy
+  only:
+    - main
+  script:
+    - npx vercel pull --yes --environment=production --token=$VERCEL_TOKEN
+    - npx vercel build --prod --token=$VERCEL_TOKEN
+    - npx vercel deploy --prebuilt --prod --token=$VERCEL_TOKEN
+  environment:
+    name: production
+    url: https://help.solarius.me
