@@ -204,6 +204,19 @@ export const navigation = [
     ],
   },
   {
+    title: "Framework",
+    links: [
+      {
+        title: "Limiteds",
+        href: "/framework/limiteds",
+      },
+      {
+        title: "Recent average price",
+        href: "/framework/rap",
+      },
+    ],
+  },
+  {
     title: "Guides",
     links: [
       { title: "Account recovery", href: "/guides/account-recovery" },

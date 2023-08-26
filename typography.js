@@ -206,6 +206,7 @@ module.exports = ({ theme }) => ({
       "img, video, figure": {
         marginTop: theme("spacing.8"),
         marginBottom: theme("spacing.8"),
+        borderRadius: theme("borderRadius.lg") + " !important",
       },
       "figure > *": {
         marginTop: "0",

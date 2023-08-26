@@ -1,0 +1,65 @@
+import candlestick from "@/images/limiteds/candlestick.png";
+import resellers from "@/images/limiteds/resellers.png";
+import page from "@/images/limiteds/page.png";
+export const description =
+  "Learn about Limiteds on Framework and how they work on the economy.";
+
+# Limiteds
+
+The Limiteds system on Framework is a distinctive feature that makes the exchange and possession of unique limited items among users possible. "Limiteds," as they are simply referred to, denote special items characterized by their constrained quantity and often accompanied by distinct attributes. This economy system seamlessly empowers users to engage in buying, selling, and interacting with Limiteds in multifaceted ways. Below is an in-depth overview of the Limiteds system.
+
+<img src={page.src} alt="Limited page" className="w-full" />
+
+## Inventory of Limiteds
+
+Limiteds are stored in the inventory, which is a collection of all owned items on an account. The inventory includes a centralized repository of all Limiteds owned by a user.
+
+## Limited Attributes
+
+- **Title**: A unique name identifying the Limited.
+- **Description**: An overview of the item.
+- **Initial Vvlue**: The inaugural value assigned to the Limited upon its introduction into the catalog.
+- **Availability**: Quantitative availability, denoting the remaining count of that Limited.
+- **Creator**: The user who published the Limited.
+- **Stargazers**: Users who have showcased interest by favoriting the Limited.
+- **Recent average price**: The average price of the Limited over the last 60 days.
+- **Stock**: The total number of Limiteds in circulation.
+
+<div className="not-prose mb-16 mt-6 flex gap-3">
+  <Button
+    href="/framework/rap"
+    arrow="right"
+    children="Learn about RAP (Recent Average Price)"
+  />
+</div>
+
+## Acquisition of Limiteds
+
+The process of acquiring Limiteds has various approaches:
+
+1. **Limited acquisition**: Users can directly purchase Limiteds from the inventory at the listed price, subject to availability.
+2. **Limited resale acquisition**: Users have the option to purchase Limiteds from fellow users who have listed them for resale. Resale prices may differ from the original.
+3. **Regular acquisition**: Users can straightforwardly purchase non-limited items from the inventory at the specified rates.
+
+## Limited Listing
+
+Users in possession of Limiteds can opt to sell them:
+
+1. **Listing for resale**: Users can list Limiteds from their ownership for resale, dictating their set resale price.
+2. **Resale transactions**: Other users have the ability to purchase the listed limited items at the designated resell rate.
+
+<img src={resellers.src} alt="Resellers" className="w-full" />
+
+## Stargazing Mechanism
+
+Central to user engagement is the stargazing mechanism. Users can mark their interest in a Limited by stargazing it. This feature enables users to keep track of Limiteds they are interested in and receive notifications when they are listed for resale.
+
+## Pricing Trajectory and Visualized Data
+
+The Limiteds Economy System also tracks the pricing trajectory of Limiteds over time, enabling users to visualize the fluctuation in prices. This feature aids in informed decision-making for acquisition or resale.
+
+## Candlestick Chart
+
+The candlestick chart is a visual representation of the pricing trajectory of Limiteds over time. The chart is a graphical representation of the price range of Limiteds over a specified period. The candlestick chart is a useful tool for users to visualize the pricing trajectory of Limiteds and make informed decisions.
+
+<img src={candlestick.src} alt="Candlestick Chart" className="w-full" />
