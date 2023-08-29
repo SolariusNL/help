@@ -50,6 +50,11 @@ export default function App({ Component, pageProps }) {
           </>
         )}
         <meta name="description" content={pageProps.description} />
+        <meta property="og:image" content="/opengraph.png" />
+        <meta name="twitter:card" content="summary_large_image" />
+        <meta name="twitter:site" content="@solariusme" />
+        <meta name="twitter:creator" content="@solariusme" />
+        <meta name="twitter:image" content="/opengraph.png" />
       </Head>
       <MDXProvider components={mdxComponents}>
         <Layout {...pageProps}>

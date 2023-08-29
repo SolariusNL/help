@@ -18,7 +18,7 @@ export function Layout({ children, sections = [] }) {
         >
           <div className="hidden lg:flex">
             <Link href="/" aria-label="Home">
-              <Logo className="h-auto" />
+              <Logo className="hidden h-auto lg:block" />
             </Link>
           </div>
           <Header />
