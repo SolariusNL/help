@@ -226,6 +226,15 @@ export const navigation = [
       },
     ],
   },
+  {
+    title: "Framework Legal",
+    links: [
+      { title: "Terms of Service", href: "/legal/framework/terms" },
+      { title: "Privacy Policy", href: "/legal/framework/privacy" },
+      { title: "Community Guidelines", href: "/legal/framework/guidelines" },
+      { title: "Community Standards", href: "/legal/framework/standards" },
+    ],
+  },
 ];
 
 export function Navigation(props) {
