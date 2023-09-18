@@ -23,10 +23,6 @@ jobs:
         env:
           VERCEL_TOKEN: ${{ secrets.VERCEL_TOKEN }}
       
-      - name: Configure Git for Vercel
-        run: |
-          git config --global url."http://gitlab-ci-token:${{ secrets.CI_JOB_TOKEN }}@invent.solarius.me/".insteadOf http://invent.solarius.me/
-      
       - name: Deploy to production
         env:
           VERCEL_TOKEN: ${{ secrets.VERCEL_TOKEN }}
