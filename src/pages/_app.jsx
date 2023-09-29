@@ -6,8 +6,10 @@ import { Layout } from "@/components/Layout";
 import * as mdxComponents from "@/components/mdx";
 import { useMobileNavigationStore } from "@/components/MobileNavigation";
 
+import useUserStore from "@/stores/user-store";
 import "@/styles/tailwind.css";
 import "focus-visible";
+import { useEffect } from "react";
 
 function onRouteChange() {
   useMobileNavigationStore.getState().close();
@@ -19,6 +21,11 @@ Router.events.on("routeChangeError", onRouteChange);
 
 export default function App({ Component, pageProps }) {
   let router = useRouter();
+  const { fetchUser } = useUserStore();
+
+  useEffect(() => {
+    fetchUser();
+  }, [fetchUser]);
 
   return (
     <>

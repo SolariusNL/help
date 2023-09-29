@@ -410,6 +410,11 @@
   dependencies:
     escape-string-regexp "^5.0.0"
 
+"@solariusnl/authentication@^1.2.0":
+  version "1.2.0"
+  resolved "https://registry.yarnpkg.com/@solariusnl/authentication/-/authentication-1.2.0.tgz#781acec961265f740bb8775fd5ac09b1eafd4384"
+  integrity sha512-qkppW7Pbz9frV3uYphsNi4EhxwwTcJPq70D1i7UXvRxOjv+ouarMMriikvDGz+FNkLO3l3iuilFEtLL/5KErVg==
+
 "@swc/helpers@0.4.14":
   version "0.4.14"
   resolved "https://registry.yarnpkg.com/@swc/helpers/-/helpers-0.4.14.tgz#1352ac6d95e3617ccb7c1498ff019654f1e12a74"

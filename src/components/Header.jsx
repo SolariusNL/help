@@ -12,6 +12,8 @@ import {
 } from "@/components/MobileNavigation";
 import { ModeToggle } from "@/components/ModeToggle";
 import { MobileSearch, Search } from "@/components/Search";
+import useUserStore from "@/stores/user-store";
+import Image from "next/image";
 
 function TopLevelNavItem({ href, children }) {
   return (
@@ -33,6 +35,8 @@ export const Header = forwardRef(function Header({ className }, ref) {
   let { scrollY } = useScroll();
   let bgOpacityLight = useTransform(scrollY, [0, 72], [0.5, 0.9]);
   let bgOpacityDark = useTransform(scrollY, [0, 72], [0.2, 0.8]);
+
+  const { user, isLoading } = useUserStore();
 
   return (
     <motion.div
@@ -85,7 +89,25 @@ export const Header = forwardRef(function Header({ className }, ref) {
           <ModeToggle />
         </div>
         <div className="hidden min-[416px]:contents">
-          <Button href="#">Sign in</Button>
+          {isLoading ? (
+            <div className="h-7 w-12 animate-pulse rounded-full bg-zinc-100 dark:bg-zinc-800" />
+          ) : user ? (
+            <div className="flex items-center gap-3">
+              <Image
+                src={`https://media.solarius.me/${user.avatarUri}`}
+                width={28}
+                height={28}
+                className="rounded-full"
+              />
+              <span className="text-sm font-medium text-zinc-600 dark:text-zinc-400">
+                {user.username}
+              </span>
+            </div>
+          ) : (
+            <Link href="/login">
+              <Button>Sign in</Button>
+            </Link>
+          )}
         </div>
       </div>
     </motion.div>

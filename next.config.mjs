@@ -18,6 +18,9 @@ const nextConfig = {
   experimental: {
     scrollRestoration: true,
   },
+  images: {
+    domains: ["media.solarius.me"],
+  },
 };
 
 export default withMDX(nextConfig);
