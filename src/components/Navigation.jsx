@@ -235,6 +235,23 @@ export const navigation = [
       { title: "Community Standards", href: "/legal/framework/standards" },
     ],
   },
+  {
+    title: "Framework Rules",
+    links: [
+      {
+        title: "Racist, sexist, discriminatory",
+        href: "/rules/discrimination",
+      },
+      { title: "Hacking, cheating, scamming", href: "/rules/hacking" },
+      { title: "Impersonation", href: "/rules/impersonation" },
+      {
+        title: "Spamming, phishing, prohibited advertising",
+        href: "/rules/spamming",
+      },
+      { title: "Inappropriate content", href: "/rules/inappropriate" },
+      { title: "Violent, harmful, illegal content", href: "/rules/violent" },
+    ],
+  },
 ];
 
 export function Navigation(props) {
