@@ -239,7 +239,7 @@ export const navigation = [
     title: "Framework Rules",
     links: [
       {
-        title: "Racist, sexist, discriminatory",
+        title: "Racism, sexism, discrimination",
         href: "/rules/discrimination",
       },
       { title: "Hacking, cheating, scamming", href: "/rules/hacking" },
