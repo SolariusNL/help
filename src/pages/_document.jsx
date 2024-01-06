@@ -1,3 +1,4 @@
+import clsx from "clsx";
 import { Head, Html, Main, NextScript } from "next/document";
 
 const modeScript = `
@@ -41,7 +42,12 @@ export default function Document() {
       <Head>
         <script dangerouslySetInnerHTML={{ __html: modeScript }} />
       </Head>
-      <body className="bg-white antialiased dark:bg-zinc-900">
+      <body
+        className={clsx(
+          "bg-white antialiased dark:bg-zinc-900",
+          "scrollbar-thin scrollbar-thumb-zinc-300 scrollbar-thumb-rounded-md dark:scrollbar-track-zinc-900 dark:scrollbar-thumb-zinc-800"
+        )}
+      >
         <Main />
         <NextScript />
       </body>

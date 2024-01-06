@@ -3,7 +3,6 @@ import Link from "next/link";
 
 import { GridPattern } from "@/components/GridPattern";
 import { Heading } from "@/components/Heading";
-import { ChatBubbleIcon } from "@/components/icons/ChatBubbleIcon";
 import { EnvelopeIcon } from "@/components/icons/EnvelopeIcon";
 import { UserIcon } from "@/components/icons/UserIcon";
 import { CogIcon } from "./icons/CogIcon";
@@ -41,7 +40,7 @@ const resources = [
     href: "/support",
     name: "Contact",
     description:
-      "Learn how to contact members of the Solarius team for support or business inquiries.",
+      "Learn how to contact Solarius for support and business inquiries.",
     icon: EnvelopeIcon,
     pattern: {
       y: 32,
@@ -49,16 +48,6 @@ const resources = [
         [0, 2],
         [1, 4],
       ],
-    },
-  },
-  {
-    href: "/chats",
-    name: "Test",
-    description: "Test gekajsldahskmhdavs",
-    icon: ChatBubbleIcon,
-    pattern: {
-      y: 22,
-      squares: [[0, 1]],
     },
   },
 ];
@@ -146,7 +135,7 @@ export function Resources() {
       <Heading level={2} id="resources">
         Resources
       </Heading>
-      <div className="not-prose mt-4 grid grid-cols-1 gap-8 border-t border-zinc-900/5 pt-10 dark:border-white/5 sm:grid-cols-2 xl:grid-cols-4">
+      <div className="not-prose mt-4 grid grid-cols-1 gap-8 border-t border-zinc-900/5 pt-10 dark:border-white/5 sm:grid-cols-2 xl:grid-cols-3">
         {resources.map((resource) => (
           <Resource key={resource.href} resource={resource} />
         ))}
