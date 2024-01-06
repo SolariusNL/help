@@ -217,16 +217,6 @@ export const navigation = [
     ],
   },
   {
-    title: "Guides",
-    links: [
-      { title: "Account recovery", href: "/guides/account-recovery" },
-      {
-        title: "Security",
-        href: "/guides/security",
-      },
-    ],
-  },
-  {
     title: "Framework Legal",
     links: [
       { title: "Terms of Service", href: "/legal/framework/terms" },
@@ -250,6 +240,32 @@ export const navigation = [
       },
       { title: "Inappropriate content", href: "/rules/inappropriate" },
       { title: "Violent, harmful, illegal content", href: "/rules/violent" },
+    ],
+  },
+  {
+    title: "Framework Guides",
+    links: [
+      { title: "Account recovery", href: "/guides/framework/account-recovery" },
+      {
+        title: "Security",
+        href: "/guides/framework/security",
+      },
+      {
+        title: "Changing your email",
+        href: "/guides/framework/changing-email",
+      },
+      {
+        title: "TOTP issues",
+        href: "/guides/framework/totp-issues",
+      },
+      {
+        title: "Proof of ownership",
+        href: "/guides/framework/proof-of-ownership",
+      },
+      {
+        title: "Chargebacks",
+        href: "/guides/framework/chargebacks",
+      },
     ],
   },
 ];
