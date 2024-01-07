@@ -275,10 +275,10 @@ export function Navigation(props) {
     <nav {...props}>
       <ul role="list">
         <TopLevelNavItem href="#">API</TopLevelNavItem>
-        <TopLevelNavItem href="https://docs.soodam.rocks">
+        <TopLevelNavItem href="https://wiki.solarius.me">
           Documentation
         </TopLevelNavItem>
-        <TopLevelNavItem href="https://framework.soodam.rocks/contact">
+        <TopLevelNavItem href="https://framework.solarius.me/support">
           Support
         </TopLevelNavItem>
         {navigation.map((group, groupIndex) => (
