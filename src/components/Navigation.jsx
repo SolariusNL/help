@@ -189,6 +189,10 @@ export const navigation = [
     links: [
       { title: "Introduction", href: "/" },
       {
+        title: "Press",
+        href: "/press",
+      },
+      {
         title: "Support",
         href: "/support",
       },
