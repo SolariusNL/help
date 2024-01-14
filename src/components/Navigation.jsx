@@ -227,6 +227,7 @@ export const navigation = [
       { title: "Privacy Policy", href: "/legal/framework/privacy" },
       { title: "Community Guidelines", href: "/legal/framework/guidelines" },
       { title: "Community Standards", href: "/legal/framework/standards" },
+      { title: "AI Content Guidelines", href: "/legal/framework/ai" },
     ],
   },
   {
