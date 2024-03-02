@@ -189,8 +189,8 @@ export const navigation = [
     links: [
       { title: "Introduction", href: "/" },
       {
-        title: "Press",
-        href: "/press",
+        title: "Shared Source Program",
+        href: "/shared-source",
       },
       {
         title: "Support",
