@@ -5,7 +5,7 @@ import { GridPattern } from "@/components/GridPattern";
 import { Heading } from "@/components/Heading";
 import { EnvelopeIcon } from "@/components/icons/EnvelopeIcon";
 import { UserIcon } from "@/components/icons/UserIcon";
-import { CogIcon } from "./icons/CogIcon";
+import { BookIcon } from "./icons/BookIcon";
 
 const resources = [
   {
@@ -23,11 +23,11 @@ const resources = [
     },
   },
   {
-    href: "/services",
-    name: "Services",
+    href: "/policies",
+    name: "Policies",
     description:
-      "Learn more about services provided by Solarius and what they do to empower you.",
-    icon: CogIcon,
+      "Solarius policies and guidelines for using our services and products.",
+    icon: BookIcon,
     pattern: {
       y: -6,
       squares: [

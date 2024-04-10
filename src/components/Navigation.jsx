@@ -201,23 +201,9 @@ export const navigation = [
   {
     title: "Services",
     links: [
-      { title: "Getting started", href: "/services" },
       { title: "Framework", href: "/services/framework" },
       { title: "Infra", href: "/services/infra" },
       { title: "Udmux", href: "/services/udmux" },
-    ],
-  },
-  {
-    title: "Framework",
-    links: [
-      {
-        title: "Limiteds",
-        href: "/framework/limiteds",
-      },
-      {
-        title: "Recent average price",
-        href: "/framework/rap",
-      },
     ],
   },
   {
