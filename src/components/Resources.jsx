@@ -9,7 +9,7 @@ import { BookIcon } from "./icons/BookIcon";
 
 const resources = [
   {
-    href: "/guides/account-recovery",
+    href: "/framework/account-security/account-recovery",
     name: "Account recovery",
     description:
       "Lost access to your Solarius account? Learn how to recover your account.",
@@ -23,10 +23,10 @@ const resources = [
     },
   },
   {
-    href: "/policies",
-    name: "Policies",
+    href: "/framework/information/about",
+    name: "Framework",
     description:
-      "Solarius policies and guidelines for using our services and products.",
+      "Learn about Framework, our new platform for building and sharing games.",
     icon: BookIcon,
     pattern: {
       y: -6,

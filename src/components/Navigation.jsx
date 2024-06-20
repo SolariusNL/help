@@ -122,9 +122,20 @@ function NavigationGroup({ group, className }) {
     <li className={clsx("relative mt-6", className)}>
       <motion.h2
         layout="position"
-        className="text-xs font-semibold text-zinc-900 dark:text-white"
+        className={clsx(
+          "text-xs font-semibold text-zinc-900/75 dark:text-white/75",
+          group.links.length === 0 && "flex !text-sm items-center gap-3 !text-zinc-900 dark:!text-white"
+        )}
       >
         {group.title}
+        {group.links.length === 0 && (
+          <div className="flex-1 h-px bg-zinc-900/10 dark:bg-white/5" />
+        )}
+        {group.tag && (
+          <Tag variant="medium">
+            {group.tag}
+          </Tag>
+        )}
       </motion.h2>
       <div className="relative mt-3 pl-2">
         <AnimatePresence initial={!isInsideMobileNavigation}>
@@ -189,73 +200,70 @@ export const navigation = [
     links: [
       { title: "Introduction", href: "/" },
       {
-        title: "Shared Source Program",
-        href: "/shared-source",
-      },
-      {
         title: "Support",
         href: "/support",
       },
     ],
   },
   {
-    title: "Services",
+    title: "Framework",
+    links: [],
+    tag: "Alpha",
+  },
+  {
+    title: "Information",
     links: [
-      { title: "Framework", href: "/services/framework" },
-      { title: "Infra", href: "/services/infra" },
-      { title: "Udmux", href: "/services/udmux" },
+      { title: "About", href: "/framework/information/about" },
+      { title: "FAQ", href: "/framework/information/faq" },
+      { title: "Roadmap", href: "/framework/information/roadmap" },
+    ]
+  },
+  {
+    title: "Policies",
+    links: [
+      { title: "Terms of Service", href: "/framework/policies/terms" },
+      { title: "Privacy Policy", href: "/framework/policies/privacy" },
+      { title: "Community Guidelines", href: "/framework/policies/guidelines" },
+      { title: "Community Standards", href: "/framework/policies/standards" },
     ],
   },
   {
-    title: "Framework Legal",
+    title: "Account security",
     links: [
-      { title: "Terms of Service", href: "/legal/framework/terms" },
-      { title: "Privacy Policy", href: "/legal/framework/privacy" },
-      { title: "Community Guidelines", href: "/legal/framework/guidelines" },
-      { title: "Community Standards", href: "/legal/framework/standards" },
-      { title: "AI Content Guidelines", href: "/legal/framework/ai" },
-    ],
-  },
-  {
-    title: "Framework Rules",
-    links: [
-      {
-        title: "Racism, sexism, discrimination",
-        href: "/rules/discrimination",
-      },
-      { title: "Hacking, cheating, scamming", href: "/rules/hacking" },
-      { title: "Impersonation", href: "/rules/impersonation" },
-      {
-        title: "Spamming, phishing, prohibited advertising",
-        href: "/rules/spamming",
-      },
-      { title: "Inappropriate content", href: "/rules/inappropriate" },
-      { title: "Violent, harmful, illegal content", href: "/rules/violent" },
-    ],
-  },
-  {
-    title: "Framework Guides",
-    links: [
-      { title: "Account recovery", href: "/guides/framework/account-recovery" },
+      { title: "Account recovery", href: "/framework/account-security/account-recovery" },
       {
         title: "Security",
-        href: "/guides/framework/security",
-      },
-      {
-        title: "Changing your email",
-        href: "/guides/framework/changing-email",
+        href: "/framework/account-security/security",
       },
       {
         title: "TOTP issues",
-        href: "/guides/framework/totp-issues",
+        href: "/framework/account-security/totp-issues",
+      },
+    ]
+  },
+  {
+    title: "Guides",
+    links: [
+      {
+        title: "Changing your email",
+        href: "/framework/guides/changing-email",
       },
       {
+        title: "Changing your password",
+        href: "/framework/guides/changing-password",
+      },
+    ]
+  },
+  {
+    title: "Billing",
+    links: [
+      {
         title: "Proof of ownership",
-        href: "/guides/framework/proof-of-ownership",
+        href: "/framework/billing/proof-of-ownership",
       },
       {
         title: "Chargebacks",
-        href: "/guides/framework/chargebacks",
+        href: "/framework/billing/chargebacks",
       },
     ],
   },
